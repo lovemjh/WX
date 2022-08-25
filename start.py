@@ -7,9 +7,10 @@ if __name__ =="__main__":
     appid='wx461dada8b42217ec'
     secret='2275b0f171b57f29fc750871459be07d'
     touser=['oFQRR53xjtQSw_nBvkEWNAAa32WQ']#微信用户id
-    template_id='xr4-jhdCJ2ecFlAcSPrIeYjkhFWAeWdjuxYFhsAa6dA	'#模板id
+    template_id='LfGdm2BTfZkZ0rVRqrnwNoYYkjDCpuiHJTQyGOfAx6s'#模板id
     city_id='101100601'#城市天气id
-    birthday = "2003-04-10"
+    birthday = "2001-01-30"
+    inday = "2020-07-13"
     info="爱老婆~"#底部信息
     e='库洛米大人万岁！！'#底部信息
  
@@ -44,6 +45,10 @@ if __name__ =="__main__":
         birthday_date = datetime.datetime.strptime(birthday, "%Y-%m-%d")
         curr_datetime = datetime.datetime.now()
         minus_datetime = curr_datetime - birthday_date
+        #在一起多久了
+        inday_date = datetime.datetime.strptime(inday, "%Y-%m-%d")
+        cur_datetime = datetime.datetime.now()
+        minu_datetime = cur_datetime - inday_date
         #发送消息
         sendMessage_url=f"https://api.weixin.qq.com/cgi-bin/message/template/send?access_token={access_token}"
         for user in touser:
@@ -53,12 +58,16 @@ if __name__ =="__main__":
                "appid":appid,
                "data":{
                    "demo": {
-                       "value": "测试语句",
+                       "value": "巴库来了！！",
                        "color": "#AAFF00"
                    },
                    "live": {
                        "value": minus_datetime.days,
                        "color": "#00FF00"
+                   },                  
+                   "in": {
+                       "value": minu_datetime.days,
+                       "color": "#FF0000"
                    },
                    "date2": {
                        "value": date2,

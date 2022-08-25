@@ -30,3 +30,18 @@ jobs:
     #   START_DATE: ${{ secrets.START_DATE }}
     #   BIRTHDAY: ${{ secrets.BIRTHDAY }}
     #   CITY: ${{ secrets.CITY }}
+
+
+# 今天是{{date2.DATA}}了哦！
+# 最爱老婆的{{demo.DATA}}
+ 
+# 这是详细时间哦：{{date.DATA}}
+# 老婆在:{{city.DATA}}呢。
+# 今天是:{{weather.DATA}}，嘻嘻。
+# 最低气温是:{{tempn.DATA}}
+# 最高气温是:{{temp.DATA}}
+# 老婆已经是个:{{live.DATA}}天的大宝宝了！
+# 我们在一起:{{in.DATA}}天了哦！
+ 
+# {{wd.DATA}}
+# {{english.DATA}}
