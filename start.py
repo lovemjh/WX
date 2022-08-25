@@ -6,7 +6,7 @@ import datetime
 if __name__ =="__main__":
     appid='wx461dada8b42217ec'
     secret='2275b0f171b57f29fc750871459be07d'
-    touser=['oFQRR53xjtQSw_nBvkEWNAAa32WQ']#微信用户id
+    touser=['oFQRR53xjtQSw_nBvkEWNAAa32WQ','oFQRR524fThpTCo9-CtERnieIpZo']#微信用户id
     template_id='LfGdm2BTfZkZ0rVRqrnwNoYYkjDCpuiHJTQyGOfAx6s'#模板id
     city_id='101100601'#城市天气id
     birthday = "2001-01-30"
