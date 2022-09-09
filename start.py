@@ -8,7 +8,7 @@ if __name__ =="__main__":
     secret='2275b0f171b57f29fc750871459be07d'
     touser=['oFQRR53xjtQSw_nBvkEWNAAa32WQ','oFQRR524fThpTCo9-CtERnieIpZo']#微信用户id
     template_id='LfGdm2BTfZkZ0rVRqrnwNoYYkjDCpuiHJTQyGOfAx6s'#模板id
-    city_id='101100601'#城市天气id
+    city_id='101030500'#城市天气id
     birthday = "2001-01-30"
     inday = "2020-07-13"
     info="爱老婆~"#底部信息
